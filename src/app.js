@@ -28,13 +28,13 @@ app.get('', (req, res) => {
 });
 app.get('/about', (req, res) => {
     res.render('about',{
-        title: 'About me',
+        title: 'About',
         name: 'Sarita Mandal'
     })
 });
 app.get('/help', (req, res) => {
     res.render('help',{
-        message: 'this is help page as dynamic template',
+        message: 'this is help page',
         title: 'Help page',
         name: 'Sarita Mandal'
     })
@@ -89,14 +89,14 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404',{
         message: 'help article not found!',
-        title: '/help/*',
+        title: 'Error',
         name: 'Sarita Mandal'
     })
 })
 app.get('*', (req, res) => {
     res.render('404',{
-        message: '404 for all',
-        title: '*',
+        message: 'page not found',
+        title: 'Error',
         name: 'Sarita Mandal'
     })
 })

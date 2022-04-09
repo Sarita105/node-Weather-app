@@ -11,6 +11,8 @@ const forecast = (lat, long, cb) => {
             } else{
                 const data = body.current;
                 cb(undefined, {
+                    loc: body.location,
+                    desc: data,
                     weather_descriptions: data.weather_descriptions[0],
                     tempurature_out: data.temperature,
                     feelslike: data.feelslike

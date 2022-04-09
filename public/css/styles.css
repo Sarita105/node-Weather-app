@@ -46,3 +46,13 @@ button{
     color: white;
     padding: 8px;
 }
+#message-1 {
+    color: red;
+}
+#wether-info{
+   color:#333333;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
